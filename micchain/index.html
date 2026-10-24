@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MicChain - My Software Adventure</title>
+  <meta name="description" content="MicChain: run your microphone through your own VST3 plugins and use the result in any app. Free for Windows.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='%2328aa46'/%3E%3Crect x='25' y='14' width='14' height='24' rx='7' fill='white'/%3E%3Crect x='30' y='40' width='4' height='8' fill='white'/%3E%3Crect x='22' y='47' width='20' height='4' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="../">My Software <span>Adventure</span></a>
+      <nav>
+        <a href="../#products">Products</a>
+        <a href="https://youtube.com/@mysoftwareadventure">YouTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="video">
+      <!-- VIDEO: replace VIDEO_ID with the YouTube video id and remove the "soon" div -->
+      <div class="soon">Video coming soon</div>
+    </div>
+
+    <div class="product-head">
+      <div>
+        <h1>MicChain</h1>
+        <p>Free · Windows 10 / 11 (64-bit) · Version 1.0</p>
+      </div>
+      <a class="btn" href="https://github.com/MySoftwareAdventure/micchain/releases/latest/download/MicChain.zip">
+        Download MicChain<small>Free · .zip for Windows</small>
+      </a>
+    </div>
+
+    <h2>What can you do with it?</h2>
+    <p>MicChain runs your microphone through a chain of VST3 plugins - a denoiser, compressor, EQ,
+      de-esser, whatever you like - and sends the result to a virtual cable. Every app that uses
+      that cable as its microphone gets your processed sound: speech-to-text, Discord, OBS, calls.</p>
+    <ul>
+      <li><strong>Your own plugin chain</strong> - add any VST3 plugin, reorder, switch on/off, double-click to open.</li>
+      <li><strong>Monitor</strong> - hear exactly what other apps hear while you tweak.</li>
+      <li><strong>Presets</strong> - different chains for recording, calls or speech-to-text.</li>
+      <li><strong>Auto-switch</strong> - change preset automatically when a program like OBS starts.</li>
+      <li><strong>Shortcuts</strong> - Ctrl+Alt+1-9 switches presets from anywhere.</li>
+      <li><strong>Runs in the background</strong> - lives in the tray, can start with Windows.</li>
+    </ul>
+
+    <h2>How to install</h2>
+    <div class="box">
+      <ol>
+        <li>Install <a href="https://vb-audio.com/Cable/">VB-Cable</a> (free) and <strong>restart your PC</strong>.</li>
+        <li>Download MicChain with the button above and unzip it to any folder.</li>
+        <li>Double-click <strong>MicChain.exe</strong>.</li>
+        <li>Pick your microphone, keep <em>Send to</em> on <strong>CABLE Input</strong>, add plugins and press <strong>Start</strong>.</li>
+        <li>In the app you want to use (Discord, OBS, speech-to-text…), choose <strong>CABLE Output</strong> as the microphone.</li>
+      </ol>
+    </div>
+    <div class="box note">
+      <strong>"Windows protected your PC"?</strong> That message appears for new apps from small
+      creators that aren't code-signed. Click <em>More info → Run anyway</em>. You only need to do this once.
+    </div>
+
+    <h2>Free plugins I use</h2>
+    <ul>
+      <li><a href="https://bertomaudio.com/">Bertom Denoiser</a> - removes background noise.</li>
+      <li><a href="https://www.meldaproduction.com/">MeldaProduction free bundle</a> - MCompressor, MEqualizer, MConvolutionEZ and more.</li>
+      <li><a href="https://techivation.com/">T-De-Esser 2</a> by Techivation - tames harsh S and T sounds.</li>
+    </ul>
+    <p>You can use any VST3 plugins you like - these are just my go-tos.</p>
+
+    <h2>Open source</h2>
+    <p>MicChain is free software under the GPL-3.0 license, built with
+      <a href="https://github.com/spotify/pedalboard">pedalboard</a>.
+      Source code: <a href="https://github.com/MySoftwareAdventure/micchain">github.com/MySoftwareAdventure/micchain</a>.</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 My Software Adventure · <a href="https://youtube.com/@mysoftwareadventure">YouTube</a>
+    </div>
+  </footer>
+</body>
+</html>
